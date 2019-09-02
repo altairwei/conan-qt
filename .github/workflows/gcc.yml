@@ -16,6 +16,9 @@ jobs:
             fetch-depth: 1
       - name: install
         run: |
+          sudo apt-get install python3-setuptools
+          sudo update-alternatives --remove python /usr/bin/python2
+          sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
           chmod +x .ci/install.sh
           ./.ci/install.sh
       - name: run

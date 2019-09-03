@@ -9,7 +9,6 @@ jobs:
         visualVersion: ["15", "16"]
         arch: [x86, x86_64]
         buildType: [Debug, Release]
-        page: [1, 2, 3]
         include:
           - visualVersion: "15"
             host: windows-2016
@@ -27,8 +26,6 @@ jobs:
             conan user
       - name: run
         env:
-            CONAN_CURRENT_PAGE: ${{matrix.page}}
-            CONAN_TOTAL_PAGES: 3
             CONAN_VISUAL_VERSIONS: ${{matrix.visualVersion}}
             CONAN_BUILD_TYPES: ${{matrix.buildType}}
             CONAN_ARCHS: ${{matrix.arch}}

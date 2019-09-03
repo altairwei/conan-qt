@@ -9,7 +9,6 @@ jobs:
         version: ["4.9", "5", "6", "7", "8"]
         arch: [x86, x86_64]
         buildType: [Debug, Release]
-        page: [1, 2]
     steps:
       - uses: actions/checkout@v1
         with:
@@ -23,8 +22,6 @@ jobs:
           ./.ci/install.sh
       - name: run
         env:
-            CONAN_CURRENT_PAGE: ${{matrix.page}}
-            CONAN_TOTAL_PAGES: 2
             CONAN_BUILD_TYPES: ${{matrix.buildType}}
             CONAN_ARCHS: ${{matrix.arch}}
             CONAN_GCC_VERSIONS: ${{matrix.version}}

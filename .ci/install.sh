@@ -26,3 +26,12 @@ pip install conan --upgrade
 pip install conan_package_tools bincrafters_package_tools
 
 conan user
+
+pip install lief requests
+conan config install https://github.com/conan-io/hooks.git -sf hooks -tf hooks
+conan config set hooks.conan-center
+conan config set hooks.attribute_checker
+conan config set hooks.binary_linter
+conan config set hooks.bintray_updater
+conan config set hooks.github_updater
+conan config set hooks.spdx_checker

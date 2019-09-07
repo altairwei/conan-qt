@@ -20,7 +20,7 @@ if __name__ == "__main__":
         username="altairwei",
         upload = "https://api.bintray.com/conan/altairwei/conan",
         remotes= "https://api.bintray.com/conan/bincrafters/public-conan, https://api.bintray.com/conan/conan-community/conan")
-    builder.add_common_builds()
+    builder.add_common_builds(pure_c=False)
     # Add extra options to common builds
     extra_builds = []
     for settings, options, env_vars, build_requires, reference in builder.items:

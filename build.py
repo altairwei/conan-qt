@@ -6,14 +6,15 @@ import copy
 
 if __name__ == "__main__":
     extra_options = {
-        "qtsvg": "True", 
-        "qttools": "True", 
-        "qttranslations": "True", 
-        "qtimageformats": "True", 
-        "qtgraphicaleffects": "True", 
-        "qtwebsockets": "True",
-        "qtwebchannel": "True",
-        "qtwebengine":"True"}
+        "qt:qtsvg": "True", 
+        "qt:qttools": "True", 
+        "qt:qttranslations": "True", 
+        "qt:qtimageformats": "True", 
+        "qt:qtgraphicaleffects": "True", 
+        "qt:qtwebsockets": "True",
+        "qt:qtwebchannel": "True",
+        "qt:qtwebengine":"True"
+    }
     #TODO: add upload url
     builder = ConanMultiPackager(
         username="altairwei",

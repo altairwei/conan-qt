@@ -3,7 +3,7 @@ build: false
 environment:
     PYTHON: "C:\\Python37"
 
-    CONAN_TOTAL_PAGES: 12
+    CONAN_TOTAL_PAGES: 6
 
     matrix:
         # Visual Studio 2015 - Release
@@ -31,30 +31,6 @@ environment:
           CONAN_VISUAL_VERSIONS: 14
           CONAN_BUILD_TYPES: Release
           CONAN_CURRENT_PAGE: 6
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 7
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 8
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 9
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 10
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 11
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 12
         # Visual Studio 2015 - Debug
         - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
           CONAN_VISUAL_VERSIONS: 14
@@ -80,30 +56,6 @@ environment:
           CONAN_VISUAL_VERSIONS: 14
           CONAN_BUILD_TYPES: Debug
           CONAN_CURRENT_PAGE: 6
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 7
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 8
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 9
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 10
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 11
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 12
         # Visual Studio 2017 - Release
         - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
           CONAN_VISUAL_VERSIONS: 15
@@ -129,30 +81,6 @@ environment:
           CONAN_VISUAL_VERSIONS: 15
           CONAN_BUILD_TYPES: Release
           CONAN_CURRENT_PAGE: 6
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 7
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 8
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 9
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 10
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 11
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Release
-          CONAN_CURRENT_PAGE: 12
         # Visual Studio 2017 - Debug
         - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
           CONAN_VISUAL_VERSIONS: 15
@@ -178,30 +106,6 @@ environment:
           CONAN_VISUAL_VERSIONS: 15
           CONAN_BUILD_TYPES: Debug
           CONAN_CURRENT_PAGE: 6
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 7
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 8
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 9
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 10
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 11
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
-          CONAN_BUILD_TYPES: Debug
-          CONAN_CURRENT_PAGE: 12
 
 install:
   - set PATH=%PYTHON%;%PYTHON%/Scripts/;%PATH%
